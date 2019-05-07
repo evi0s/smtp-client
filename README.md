@@ -1,4 +1,4 @@
-# stmp-client
+# smtp-client
 
 又是计网作业 awsl
 
@@ -31,4 +31,6 @@ Detailed info is in the debug info & code comments & git commits.
 
 ## Screen Shots
 
+![1](./screenshots/1.png)
 
+![2](./screenshots/2.png)

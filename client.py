@@ -93,8 +93,10 @@ if __name__ == '__main__':
         if 'DEBUG' in os.environ:
             smtp_client.set_debuglevel(1)
 
+        print(f'Connect to server {host} success!')
+
     except ConnectionRefusedError:
-        error('Cannot connect to SMTP server!')
+        error(f'Error connecting to server {host}!')
         sys.exit(0)
 
     # Get username and password
@@ -127,5 +129,4 @@ if __name__ == '__main__':
         print(f'Your mail has delivered to {receiver} successfully')
     except Exception as e:
         error(f'Error in Sending mail: {e.args}')
-        smtp_client.quit()
         sys.exit(0)
